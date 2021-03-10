@@ -1,0 +1,131 @@
+/*
+Vamos a crear una animacion a partir de frames,
+y los vamos a hacer girar, transformar y alterar.
+*/
+
+@keyframes animacion_test{
+
+    from{
+
+        background-color: red;
+
+    }
+    to{
+
+    background-color: yellow;
+
+    }
+}
+
+@keyframes girar{
+
+    from{
+
+        transform: rotate(0deg)
+    }
+
+    to{
+
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes label_animation{
+
+    from{
+
+        transform: rotate(0deg);
+        margin-left: 0;
+    }
+
+
+    to{
+
+        /* VW va de acuerdo con la pantalla de tu computadora */
+
+        transform: rotate(180deg);
+        margin-left: 40vw;
+
+    }
+
+}
+
+/*
+
+Vamos a dar las reglas de las clases que ya habiamos definido en 
+animaciones.html
+
+*/
+
+.label_container{
+
+    width: 100%;
+    padding: 1rem;
+
+    /*border: 2px solid rgb(22, 22,22);*/
+
+    box-sizing: border-box;
+
+}
+
+.label{
+
+    width: 64px;
+    background-color: rgb(12,45,89);
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    /*A quí es donde animamos*/
+    animation-name: label_animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    /*Entrada y salida*/
+    animation-iteration-count: 3s;
+    animation-direction: alternate;
+}
+
+/*
+Vamos a animar y mandar a llamar las animaciones de arriba
+*/
+
+.loader{
+
+    width: 64px;
+    height: 64px;
+    border: 5px solid rgb(129, 34,12);
+    border-top: 5px solid rgb(34,65,12);
+    border-radius: 50%;
+    animation-name: girar 2s linear infinite;
+}
+
+.loader_doble{
+
+    width: 64px;
+    height: 64px;
+    border: 16px solid rgb(114, 38, 21);
+    border-top: 16px solid rgb(85, 180, 17);
+    border-bottom: 16px solid rgb(12,45,89);
+    border-radius: 50%;
+    animation-name: girar 2s ease-in-out infinite;
+
+
+}
+
+.animada{
+
+    width: 100%;
+    background-color: brown;
+    color: azure;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion_test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
