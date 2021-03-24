@@ -1,0 +1,45 @@
+
+*{
+
+    background-color:#A9DFBF ;
+
+}
+
+p{
+
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+}
+
+.td_sup{
+
+    align-items: left;
+    width: 120;
+    justify-content: left;
+
+}
+
+.td_inf{
+
+    align-items: center;
+    justify-content: center;
+    width: 150;
+
+}
+
+.imput_text{
+
+    align-items: center;
+    justify-content: center;
+    size: 12;
+    border-width: 2px;
+    border-style: solid;
+    color: #008000;
+    letter-spacing: 3px;
+    font-size: 10px;
+
+
+}
