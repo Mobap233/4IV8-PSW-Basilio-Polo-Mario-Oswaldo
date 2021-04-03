@@ -1,0 +1,19 @@
+*{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(136, 55, 70);
+}
+
+h2{
+
+    color: rgb(168, 177, 85);
+    text-align: center;
+
+
+}
+
+.principal_container{
+
+    padding: 4rem;
+
+}
