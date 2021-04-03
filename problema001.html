@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/problema001_style.css">
+    <script src="./JS/problema001.js"></script>
+    <title>Problema001</title>
+</head>
+<body>
+
+    <section class="principal_container">
+
+        <div>
+
+            <h2>
+                Suponga que un individuo desea inverti su capital 
+                en un banco y desea saber cuanto dinero ganará después 
+                de un mes si el banco le paga la razón de 2% mensual
+            </h2>
+            <br>
+            <br>
+            <br>
+
+
+            <form method="POST" name="formulario">
+    
+                <table align="center" border="1">
+        
+                    <tr>
+        
+                        <td class="td_sup">Introduce la contidad a invertir : $</td>
+                        <td class="td_inf"><input type="text" name= "cantidad" onkeypress="return validarn(event)"></td>
+        
+                        <tr>
+        
+                            <td class="td_sup">Por favor escriba cuantos meses ha trabajado al año....... Recuerde que el año solo tiene 12 meses</td>
+                            
+                            <td class="td_inf"><input type="text" name= "meses" size="2" onkeypress="return validarm(event)"></td>
+        
+                        </tr>
+        
+                    </tr>
+        
+                    <tr>
+        
+                        <td></td>
+                        <td class="td_inf"><input type="button" value="Interes" name="enviar" onclick="interes()"></td>
+        
+        
+                    </tr>
+        
+        
+                    <tr>
+        
+                        <td class="td_sup">Su salo total con intereses al 2% es de:</td>
+                        <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text"></td>
+        
+        
+        
+                    </tr>
+        
+                    <tr>
+        
+                        <td></td>
+                        <td><input type="button" value="Borrar" name="reset" onclick="borrar()"></td>
+        
+        
+                    </tr>
+        
+        
+        
+        
+                </table>
+            </form>
+        
+
+        
+        
+        
+
+
+        </div>
+
+
+    </section>
+    
+</body>
+</html>
