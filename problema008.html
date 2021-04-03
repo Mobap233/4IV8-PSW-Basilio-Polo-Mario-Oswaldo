@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/problema008_style.css">
+    <script src="./JS/problema008.js"></script>
+    <title>Problema008</title>
+</head>
+<body>
+
+    <section>
+
+        <div class="principal_container">
+
+            <h2>
+                Leer tres números diferentes e imprimir el número mayor de los tres.
+
+            </h2>
+            <br>
+            <br>
+            <br>
+            
+            <form method="post" name="formulario">
+                <table>
+                    <tr>
+                        <td class="td_sup">
+                            Escriba el primer número:
+                        </td>
+                        <td class="td_sup">
+                            <input type="text" name="num_1" onkeypress="return validarn(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_inf">
+                            Escriba el segundo número:
+                        </td>
+                        <td class="td_inf">
+                            <input type="text" name="num_2" onkeypress="return validarn(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_sup">
+                            Escriba el tercer número:
+                        </td>
+                        <td class="td_sup">
+                            <input type="text" name="num_3" onkeypress="return validarn(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_inf"></td>
+                        <td class="td_inf">
+                            <input type="button" value="Hallar al mayor" name="enviar" onclick="calculo()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_sup">
+                            El número mayor es:
+                        <td class="td_sup">
+                            <input type="text" name="final_num" id="cantidad" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_inf"></td>
+                        <td class="td_inf">
+                            <input type="button" value="Borrar" name="reset" onclick="borrar()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+    
+</body>
+</html>
